@@ -1,0 +1,21 @@
+main {
+    padding: 30px;
+}
+body {
+    font-family: 'Roboto Mono';
+    background-color: black;
+    color: greenyellow;
+}
+h1, h2, h3 {
+    color: greenyellow
+}
+
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+hr {
+    color: white;
+}

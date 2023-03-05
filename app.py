@@ -3,7 +3,7 @@ from dataclasses import asdict
 from src.use_cases.users.get_user import (GetUserRequest, GetUserUseCase)
 
 
-app = Flask(__name__, template_folder="src/providers/templates")
+app = Flask(__name__, template_folder="src/providers/templates", static_folder="src/providers/templates/static")
 
 @app.route("/favicon.ico")
 def fav():

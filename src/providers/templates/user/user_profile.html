@@ -1,7 +1,13 @@
 {% include 'common/header.html' %}
 
-<div class="typewriter">
-<h3>{{ user.name.upper() }}</h3>
+<div class="row main">
+    <div class="col-xs-4 col-lg-2">
+    <img src="{{ user.avatar_url }}" class="rounded-circle profile-pic">
+</div>
+<div class="col-xs-4">
+    <h3>{{ user.name.lower() }}</h3>
+    <b>{{ user.login }}</b>
+    </div>
 
 </div>
 <hr>
