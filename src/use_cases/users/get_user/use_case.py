@@ -1,6 +1,8 @@
-from .dto import GetUserRequest, GetUserResponse
+from . import GetUserRequest, GetUserResponse
 from src.entities.user import UserEntity
 from src.providers.github import GithubProvider
+from flask import render_template
+
 
 
 class GetUserUseCase:
@@ -24,3 +26,7 @@ class GetUserUseCase:
                 company=res["company"]
             )
         )
+    
+    def render(self):
+        data = self.execute()
+        return render_template("user/user_profile.html", user=data.user)
